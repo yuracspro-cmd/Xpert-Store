@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legacy App Store</title>
+    <style>
+        body { font-family: -apple-system, sans-serif; background: #f0f0f5; padding: 20px; text-align: center; }
+        .card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); max-width: 300px; margin: 0 auto; }
+        .icon { width: 80px; height: 80px; border-radius: 18px; }
+        .btn { display: inline-block; background: #007aff; color: white; padding: 10px 20px; border-radius: 20px; text-decoration: none; font-weight: bold; margin-top: 15px; }
+    </style>
+</head>
+<body>
+
+    <h1>Самодельный Магазин</h1>
+
+    <div class="card">
+        <img src="icon.png" class="icon" alt="Иконка">
+        <h2>Моя Игра</h2>
+        <p>Версия 1.0 (Legacy iOS)</p>
+        
+        <!-- Ссылка на установку через манифест -->
+        <a class="btn" href="itms-services://?action=download-manifest&url=https://ВАШ_НИК.github.io/legacy-store/manifest.plist">
+            Установить
+        </a>
+    </div>
+
+</body>
+</html>
